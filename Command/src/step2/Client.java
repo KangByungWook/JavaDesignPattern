@@ -1,4 +1,4 @@
-/* 해결책 1:
+/* Step1 문제점 1에 대한 해결책:
  * -> 버튼과 연결할 새로운 클래스 추가.
  * -> 버튼 클래스 수정.
  * 문제점:
@@ -23,8 +23,8 @@ class Button {
 //	private Lamp theLamp;
 	private Alarm theAlarm;
 	
-	public Button(Alarm theAlarm){ // 인자 변경.
-		this.theAlarm = theAlarm;  // 변경.
+	public Button(Alarm theAlarm){ // 인자 변경. -> OCP 위배.
+		this.theAlarm = theAlarm;  // 변경.	   -> OCP 위배.
 	}
 	
 	public void pressed(){
@@ -36,8 +36,9 @@ public class Client {
 
 	public static void main(String[] args) {
 		Alarm alarm = new Alarm();
-		Button lampButton = new Button(alarm);
-		lampButton.pressed();
+		alarm.start();
+//		Button lampButton = new Button(alarm);
+//		lampButton.pressed();
 
 	}
 
