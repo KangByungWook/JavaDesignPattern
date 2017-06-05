@@ -66,7 +66,7 @@ class AlarmOnCommand implements Command {
 	}
 }
 
-public class Client {
+public class CommandStep4 {
 
 	public static void main(String[] args) {
 		Lamp lamp = new Lamp();

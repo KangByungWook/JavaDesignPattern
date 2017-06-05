@@ -101,7 +101,7 @@ class Light {
 	}
 	
 }
-public class Client {
+public class StateStep4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

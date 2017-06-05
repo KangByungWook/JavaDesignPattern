@@ -80,7 +80,7 @@ class AlarmOnCommand implements Command {
 	}
 }
 
-public class Client {
+public class CommadStep5 {
 
 	public static void main(String[] args) {
 		Lamp lamp = new Lamp();

@@ -23,7 +23,7 @@ class Button {
 	}
 }
 
-public class Client {
+public class CommandStep1 {
 
 	public static void main(String[] args) {
 		Lamp lamp = new Lamp();

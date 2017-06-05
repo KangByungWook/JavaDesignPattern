@@ -51,7 +51,7 @@ class Button {
 	}
 }
 
-public class Client {
+public class CommandStep3 {
 	public static void main(String[] args) {
 		Lamp lamp = new Lamp();
 		Alarm alarm = new Alarm();

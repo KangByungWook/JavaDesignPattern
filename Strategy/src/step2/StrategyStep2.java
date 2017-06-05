@@ -86,7 +86,7 @@ class PunchStrategy implements AttackStrategy {
 	}
 	
 }
-public class Client2 {
+public class StrategyStep2 {
 
 	public static void main(String[] args) {
 		Robot taekwonV = new TaekwonV("TaekwonV");

@@ -32,7 +32,7 @@ class Button {
 	}
 }
 
-public class Client {
+public class CommandStep2 {
 
 	public static void main(String[] args) {
 		Alarm alarm = new Alarm();

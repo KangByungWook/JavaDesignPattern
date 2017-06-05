@@ -48,7 +48,7 @@ class DataSheetView {
 	}
 }
 
-public class Client {
+public class ObserverStep1 {
 
 	public static void main(String[] args) {
 		ScoreRecord scoreRecord = new ScoreRecord();

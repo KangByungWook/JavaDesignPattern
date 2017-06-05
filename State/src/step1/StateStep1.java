@@ -26,7 +26,7 @@ class Light {
 		}
 	}
 }
-public class Client {
+public class StateStep1 {
 
 	public static void main(String[] args) {
 		Light light = new Light();

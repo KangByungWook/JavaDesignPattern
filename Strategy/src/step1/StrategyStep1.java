@@ -57,7 +57,7 @@ class Atom extends Robot {
 // 새로운 로봇을 만들어 기존의 공격 또는 이동 방법을 추가하거나 수정하려면?
 // 예를들어 태권브이의 미사일 공격 기능을 사용하려면?
 
-public class Client1 {
+public class StrategyStep1 {
 
 	public static void main(String[] args) {
 		Robot taekonV = new TaekwonV("TaekwonV");
