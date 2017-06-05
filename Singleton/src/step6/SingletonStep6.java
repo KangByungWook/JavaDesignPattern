@@ -60,6 +60,6 @@ class FakePrinter implements Printer {
 
 }
 
-public class SingletonInterface {
+public class SingletonStep6 {
 
 }

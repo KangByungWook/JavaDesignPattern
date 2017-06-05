@@ -1,5 +1,5 @@
-// 초기화 시 바로 객체 생성하여 다중 스레드로 인한 문제 해결.
-package step3;
+// 다중 스레드로 인한 싱글턴 객체 여러개 생성되는 문제.
+package step2;
 
 class UserThread extends Thread {
 	public UserThread(String name){
@@ -13,14 +13,19 @@ class UserThread extends Thread {
 }
 
 class Printer {
-	// 다중 스레드로 인한 문제를 해결하는 방법
-	// 1. 초기화 시 바로 객체 생성.
-	private static Printer printer = new Printer();
+	private static Printer printer = null;
 	
 	// 외부에서 생성자를 호출할 수 없도록 private으로 선언.
 	private Printer() { }
 	
-	public static Printer getPrinter(){ 
+	public static Printer getPrinter(){
+		if(printer == null){
+			// 객체가 중복되어 생성되는 경우를 만들기 위해 일부러 지연 발생.
+			try {
+				Thread.sleep(1);
+			} catch(InterruptedException e) { }
+			printer = new Printer();
+		} 
 		return printer;
 	}
 	
@@ -29,7 +34,7 @@ class Printer {
 	}
 }
 
-public class Client {
+public class SingletonStep2 {
 	private static final int User_num = 5;
 	
 	public static void main(String[] args) {
@@ -38,6 +43,6 @@ public class Client {
 			users[i] = new UserThread((i+1) + "번째 사람");	// User 인스턴스 생성.
 			users[i].start();
 		}
-		// 프린터 인스턴스가 여러개 생성되는 문제 해.
+		// 프린터 인스턴스가 여러개 생성되는 문제 발생.
 	}
 }

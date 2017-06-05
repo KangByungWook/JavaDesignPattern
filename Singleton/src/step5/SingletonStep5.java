@@ -24,7 +24,7 @@ class UserThread extends Thread {
 	}
 }
 
-public class Main {
+public class SingletonStep5 {
 	private static final int THREAD_NUM = 5;
 	public static void main(String[] args) {
 		UserThread[] users = new UserThread[THREAD_NUM];

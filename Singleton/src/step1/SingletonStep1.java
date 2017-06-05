@@ -36,7 +36,7 @@ class Printer {
 	}
 }
 
-public class Main {
+public class SingletonStep1 {
 	private static final int User_num = 5;
 	
 	public static void main(String[] args) {
