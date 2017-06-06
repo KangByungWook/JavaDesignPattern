@@ -27,7 +27,7 @@ class TaekwonV extends Robot {
 
 	@Override
 	public void move() {
-		System.out.println("저는 걸어다닐 줄밖에 몰라요ㅠㅠ");
+		System.out.println("저는 걸어다닙니다.");
 	}
 	
 }
