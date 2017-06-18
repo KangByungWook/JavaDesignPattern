@@ -60,11 +60,11 @@
 ### 3. 디자인 패턴의 분류
 
 - 생성 패턴
-  1. 추상 팩토리(Abstract Factory)
+  1. [추상 팩토리(Abstract Factory)](https://sourcemaking.com/design_patterns/abstract_factory)
   2. 빌더(Builder)
   3. 팩토리 메서드(Factory Method)
   4. 프로토 타입(Prototype)
-  5. [싱글턴(Singleton)](https://github.com/KangByungWook/JavaDesignPattern/tree/master/Singleton/src)
+  5. [**싱글턴(Singleton**)](https://github.com/KangByungWook/JavaDesignPattern/tree/master/Singleton/src)
 - 구조 패턴
   1. 어댑터(Adapter)
   2. 브리지(Bridge)
@@ -75,13 +75,13 @@
   7. 프록시(Proxy)
 - 행위 패턴
   1. 책임 연쇄(Chain of Responsibility)
-  2. [커맨드(Command)](https://github.com/KangByungWook/JavaDesignPattern/tree/master/Command/src)
+  2. [**커맨드(Command)**](https://github.com/KangByungWook/JavaDesignPattern/tree/master/Command/src)
   3. 인터프리터(Interpreter)
   4. 이터레이터(Iterator)
   5. 미디에이터(Mediator)
   6. 메멘토(Memento)
-  7. [옵서버(Observer)](https://github.com/KangByungWook/JavaDesignPattern/tree/master/Observer/src)
-  8. [스테이트(State)](https://github.com/KangByungWook/JavaDesignPattern/tree/master/State/src)
-  9. [스트래티지(Strategy)](https://github.com/KangByungWook/JavaDesignPattern/tree/master/Strategy/src)
+  7. [**옵서버(Observer)**](https://github.com/KangByungWook/JavaDesignPattern/tree/master/Observer/src)
+  8. [**스테이트(State)**](https://github.com/KangByungWook/JavaDesignPattern/tree/master/State/src)
+  9. [**스트래티지(Strategy)**](https://github.com/KangByungWook/JavaDesignPattern/tree/master/Strategy/src)
   10. 템플릿 메서드(Template Method)
   11. 비지터(Visitor)

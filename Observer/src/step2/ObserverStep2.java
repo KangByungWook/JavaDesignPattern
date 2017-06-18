@@ -13,7 +13,9 @@ interface Observer {
 }
 
 abstract class Subject {
-	private List<Observer> observers = new ArrayList<Observer>();	// 데이터의 변경을 통보할 옵저버들.
+	// 문제점 2(여러 종류의 view를 다룰 경우)에 대한 해결.
+	// -> 데이터의 변경을 통보할 옵저버들을 여러개 가질 수 있게 수정.
+	private List<Observer> observers = new ArrayList<Observer>();
 	
 	public void attach(Observer observer){	// 통보 대상을 추가.
 		observers.add(observer);
@@ -64,9 +66,8 @@ class DataSheetView implements Observer{
 		displayScores(record, viewCount);					// 조회된 점수를 viewCount 만큼 출력..
 	}
 	
-	// 문제점 1
-	// 성적을 다른 형태로 출력하고 싶다면?
-	// 해결: 인터페이스를 이용해 서로 다른 출력 형태의 클래스를 분리.
+	// 문제점1(성적을 다른 형태로 출력하고 싶다면?)에 대한 해결. 
+	// -> 인터페이스를 이용해 서로 다른 출력 형태의 클래스를 분리.
 	private void displayScores(List<Integer> record, int viewCount){
 		System.out.println("List of " + viewCount + " entries: ");
 		for(int i = 0; i < viewCount && i < record.size(); i++){
@@ -76,6 +77,7 @@ class DataSheetView implements Observer{
 	}
 }
 
+// 다양한 형태의 출력 클래스를 만들 수 있다. 
 class MinMaxView implements Observer {
 	private ScoreRecord scoreRecord;
 	
